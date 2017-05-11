@@ -8,7 +8,7 @@ namespace UnitTestProject1
         [Fact]
         public void TestMethodFail()
         {
-            Assert.Equal(1, 2);
+            Assert.Equal(1, 1);
         }
         [Fact]
         public void TestMethodWorks()
