@@ -1,14 +1,19 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace UnitTestProject1
 {
-    [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestMethod1()
+        [Fact]
+        public void TestMethodFail()
         {
+            Assert.Equal(1, 2);
+        }
+        [Fact]
+        public void TestMethodWorks()
+        {
+            Assert.Equal(2, 2);
         }
     }
 }
